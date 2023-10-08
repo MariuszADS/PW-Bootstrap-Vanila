@@ -1,93 +1,99 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  background-color: #333;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  height: 200vh;
+	background-color: #333;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	height: 200vh;
 }
 
 .blue-text {
-  color: #039dff;
+	color: #039dff;
+}
+
+.shadow-bg {
+	background-color: rgb(0, 0, 1);
+	background-color: tomato;
 }
 
 .navbar-toggler {
-  padding: 10px 15px;
+	padding: 10px 15px;
 }
 
 .navbar-brand {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 nav {
-  z-index: 5;
-  text-transform: uppercase;
+	z-index: 5;
+	text-transform: uppercase;
+	transition: 0.6s;
 }
 nav .nav-link,
 nav .navbar-brand,
 nav .fa-bars {
-  color: white;
+	color: white;
 }
 nav .nav-link:focus,
 nav .nav-link:hover,
 nav nav .nav-link,
 nav nav .navbar-brand,
 nav nav .fa-bars {
-  color: #039dff;
+	color: #039dff;
 }
 
 header.hero-img {
-  position: relative;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: white;
-  background-image: url("../img/game-console-6603120_640.jpg");
+	position: relative;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: white;
+	background-image: url('../img/game-console-6603120_640.jpg');
 }
 header.hero-img h1 {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 header.hero-img .hero-shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: -5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: -5;
 }
 header.hero-img .hero-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
 }
 
 .fa-chevron-down {
-  position: absolute;
-  left: 50%;
-  bottom: 20px;
-  font-size: 30px;
-  color: white;
-  transform: translate(-50%, -50%);
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	font-size: 30px;
+	color: white;
+	transform: translate(-50%, -50%);
 }
 
 @media (mind-width: 786px) {
-  .hero-text {
-    height: 30px;
-  }
-  p {
-    font-size: 18px;
-  }
+	.hero-text {
+		height: 30px;
+	}
+	p {
+		font-size: 18px;
+	}
 }
 @media (min-width: 1200px) {
-  header .hero-img {
-    background-image: url("../img/game-console-6603120_1920 (1).jpg");
-  }
-}/*# sourceMappingURL=main.css.map */
+	header .hero-img {
+		background-image: url('../img/game-console-6603120_1920 (1).jpg');
+	}
+} /*# sourceMappingURL=main.css.map */
