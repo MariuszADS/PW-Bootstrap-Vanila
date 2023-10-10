@@ -150,6 +150,33 @@ main .section-title {
   font-size: 26px;
 }
 
+.portfolio {
+  background-color: white;
+}
+.portfolio .carusel-item {
+  height: 600px;
+}
+.portfolio .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+}
+.portfolio h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.portfolio .underline {
+  background-color: #039dff;
+  width: 60px;
+  height: 4px;
+  margin: 0 auto 0px;
+}
+.portfolio .carousel-indicators {
+  padding-bottom: 20px;
+}
+
 @media (mind-width: 786px) {
   .hero-text {
     height: 30px;
