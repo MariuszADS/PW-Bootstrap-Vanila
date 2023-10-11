@@ -6,15 +6,15 @@
 	padding: 0;
 }
 
-html{
+html {
 	scroll-padding-top: 74px;
 }
 
 body {
-	background-color: #333;
+	background-color: #c5c5c5;
 	font-family: 'Montserrat', sans-serif;
-	color: $bg-color;
-	height:100vh;
+	color: c.$bg-color;
+	height: 100vh;
 }
 
 .blue-text {
@@ -37,7 +37,7 @@ body {
 nav {
 	z-index: 5;
 	text-transform: uppercase;
-	transition:background-color 0.6s;
+	transition: background-color 0.6s;
 
 	.nav-link,
 	.navbar-brand,
@@ -99,38 +99,33 @@ main {
 main .section-title {
 	text-align: center;
 	text-transform: uppercase;
-	
 }
-
-
-
 
 .underline {
 	background-color: c.$main;
 	width: 60px;
 	height: 4px;
-	margin: 0 auto 0px;
+	margin: 0 auto 30px;
 }
 
-.aboutus  {
-	i{ font-size: 30px;
-	margin-top: 30px;
+.aboutus {
+	i {
+		font-size: 30px;
+		margin-top: 30px;
 	}
-	.aboutus-card-title{
+	.aboutus-card-title {
 		font-size: 18px;
 		text-transform: uppercase;
 	}
-	.aboutus-card-text{
+	.aboutus-card-text {
 		font-size: 14px;
-		
 	}
-	.aboutus-hover{
-		transition: .3s;
+	.aboutus-hover {
+		transition: 0.3s;
 	}
 
-	.aboutus-hover:hover{
+	.aboutus-hover:hover {
 		color: c.$main;
-		
 	}
 }
 
@@ -143,35 +138,33 @@ main .section-title {
 	z-index: 0;
 }
 
-.aboutus-shadow{
+.aboutus-shadow {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgb(0,0,0,0.7);
+	background-color: rgb(0, 0, 0, 0.7);
 	z-index: -5;
 }
-.aboutus-hero-item{
+.aboutus-hero-item {
 	margin: 10px 0;
 
-	i{
+	i {
 		font-size: 36px;
 	}
 
-	.aboutus-hero-title{
+	.aboutus-hero-title {
 		font-size: 26px;
 	}
 }
 
-.portfolio{
-
-
-	.carusel-item{
+.portfolio {
+	.carusel-item {
 		height: 600px;
 	}
 
-	.carousel-caption{
+	.carousel-caption {
 		background-color: rgb(0, 0, 0, 0.8);
 		width: 100%;
 		left: 0;
@@ -179,7 +172,7 @@ main .section-title {
 		padding: 40px 0;
 	}
 
-	h2{
+	.section-title {
 		text-align: center;
 		text-transform: uppercase;
 	}
@@ -190,17 +183,104 @@ main .section-title {
 		margin: 0 auto 0px;
 	}
 
-	.carousel-indicators{
+	.carousel-indicators {
 		padding-bottom: 20px;
 	}
 }
 .prices {
 	.price-box {
 		margin: 20px;
+		padding: 30px;
+		background-color: c.$white;
+		box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.8);
+		transition: scale 0.3s;
+	}
+
+	.price-title {
+		color: c.$main;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 30px;
+
+		.price-tag {
+			font-weight: bold;
+			font-size: 30px;
+		}
+
+		.price-info {
+			margin-top: 30px;
+		}
+		a {
+			text-decoration: none;
+		}
+	}
+
+	span {
+		font-weight: bold;
+	}
+
+	i {
+		padding: 0px 5px;
+		font-size: 24px;
+	}
+
+	button {
+		padding: 10px 20px;
+		text-transform: uppercase;
 	}
 }
 
+.price-box:hover {
+	scale: 1.05;
+}
 
+.team {
+	position: relative;
+	background-image: url('../img/team/chairs-2181960_1920.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+
+	.team-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0, 0, 0, 0.6);
+		z-index: -5;
+	}
+	.section-title {
+		color: c.$light-gray;
+	}
+
+	.card {
+		transition: scale .3s;
+		img {
+			height: 300px;
+			object-fit: cover;
+		}
+	
+		i{
+			padding: 10px;
+
+		}
+	}
+
+	.card:hover{
+		scale: .96;
+	}
+
+	.card-title{
+		margin-bottom: 20px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+.card-body{
+	height: 160px;
+}
 
 @media (mind-width: 786px) {
 	.hero-text {
@@ -212,9 +292,9 @@ main .section-title {
 	}
 }
 
-@media(min-width:992px){
-	html{
-		scroll-padding-top:72px ;
+@media (min-width: 992px) {
+	html {
+		scroll-padding-top: 72px;
 	}
 
 	.aboutus-hero {
@@ -223,11 +303,12 @@ main .section-title {
 		background-size: cover;
 		background-position: center;
 		color: c.$light-gray;
-		z-index: 0;}
-
-@media (min-width: 1200px) {
-	header .hero-img {
-		background-image: url('../img/game-console-6603120_1920\ \(1\).jpg');
+		z-index: 0;
 	}
-}
+
+	@media (min-width: 1200px) {
+		header .hero-img {
+			background-image: url('../img/game-console-6603120_1920\ \(1\).jpg');
+		}
+	}
 }
