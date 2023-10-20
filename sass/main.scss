@@ -1,4 +1,5 @@
 @use 'colors.scss' as c;
+@use 'animations.scss' as *;
 
 * {
 	box-sizing: border-box;
@@ -291,6 +292,87 @@ main .section-title {
 		font-size: 18px;
 	}
 }
+
+.achievements-list{
+	padding: 20px 0;
+	i{
+		padding: 10px;
+		font-size: 48px;
+		color: c.$white;
+		text-shadow: rgb(0, 0, 0, 0.3);
+	}
+	.achievements-number{
+		font-size: 22px;
+	}
+
+	.achievements-text{
+		font-size: 13px;
+		text-transform: uppercase;
+	}
+
+}
+
+.contact {
+	position: relative;
+	background-image: url('../img/skyline-1869214_640.jpg');
+	background-position: bottom;
+	background-attachment: fixed;
+	background-size: cover;
+	z-index: 0;
+
+	.section-title {
+		color: c.$light-gray;
+	}
+
+	.underline {
+		background-color: c.$light-gray;
+	}
+
+	.contact-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0, 9, 27, 0.85);
+		z-index: -5;
+	}
+
+	.contact-us {
+		display: flex;
+		align-items: center;
+		color: c.$white;
+		
+		.contact-item {
+			margin: 30px 0;		
+			
+			h3 {
+				margin-bottom: 15px;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+			}
+		}
+
+		.social-media {
+			font-size: 26px;
+
+			a {
+				padding: 10px;
+				color: c.$white;
+				transition: color .3s;
+			}
+
+			a:hover{
+				color: c.$main;
+			}
+		}
+		
+	}
+}
+
+
+
+
 
 @media (min-width: 992px) {
 	html {
